@@ -15,19 +15,21 @@ file(GLOB_RECURSE sources
         ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 
 # Custom-build event
-#set(engine_header_gen_py ${root_dir}/scripts/header_gen.py)
-#add_custom_command(
-#        COMMAND python ${engine_header_gen_py}
-#        DEPENDS ${headers}
-#        OUTPUT ${root_dir}/include/engine.h
-#)
-#add_custom_target(engine_header_gen_py ALL
-#        DEPENDS ${root_dir}/include/engine.h)
+set(engine_header_gen_py ${root_dir}/scripts/header_gen.py)
+add_custom_command(
+        COMMAND python ${engine_header_gen_py}
+        DEPENDS ${headers}
+        OUTPUT ${root_dir}/include/engine/PhyszyEngine.h
+)
+add_custom_target(engine_header_gen_py ALL
+        DEPENDS ${root_dir}/include/engine/PhyszyEngine.h)
 
 # Build library
 add_library(${target}
         ${sources})
-#add_dependencies(${target} engine_header_gen_py)
+add_dependencies(${target} engine_header_gen_py)
+
+include_directories(${header_dir})
 
 # Project options
 set(CMAKE_CXX_STANDARD 11)

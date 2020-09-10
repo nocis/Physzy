@@ -55,6 +55,7 @@ set(RESOURCES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/resources)
 
 
 include_directories("src")
+include_directories(include)
 include_directories("externals/")
 include_directories("externals/glm/")
 include_directories(src/examples)
