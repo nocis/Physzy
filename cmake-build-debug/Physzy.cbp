@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Physzy"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\;CMake Files\src\;CMake Files\src\engine\;CMake Files\src\examples\;CMake Files\src\examples\fluid1\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jared/Physzy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/jared/Physzy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/jared/Physzy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/jared/Physzy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/jared/Physzy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jared/Physzy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/jared/Physzy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="engine">
+				<Option output="/home/jared/Physzy/cmake-build-debug/lib/libengine.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jared/Physzy/cmake-build-debug/src/engine"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/home/jared/Physzy/src"/>
+					<Add directory="/home/jared/Physzy/externals"/>
+					<Add directory="/home/jared/Physzy/externals/glm"/>
+					<Add directory="/home/jared/Physzy/src/examples"/>
+					<Add directory="/home/jared/Physzy/src/engine"/>
+					<Add directory="/home/jared/Physzy/src/engine/3rdparty"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/opt/clang-dev/install/lib/clang/8.0.1/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/engine/Makefile&quot;  VERBOSE=1 engine"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/engine/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/engine/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/engine/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="engine/fast">
+				<Option output="/home/jared/Physzy/cmake-build-debug/lib/libengine.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jared/Physzy/cmake-build-debug/src/engine"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/home/jared/Physzy/src"/>
+					<Add directory="/home/jared/Physzy/externals"/>
+					<Add directory="/home/jared/Physzy/externals/glm"/>
+					<Add directory="/home/jared/Physzy/src/examples"/>
+					<Add directory="/home/jared/Physzy/src/engine"/>
+					<Add directory="/home/jared/Physzy/src/engine/3rdparty"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/opt/clang-dev/install/lib/clang/8.0.1/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/engine/Makefile&quot;  VERBOSE=1 engine/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/engine/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/engine/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/engine/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fluid1">
+				<Option output="/home/jared/Physzy/cmake-build-debug/bin/fluid1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jared/Physzy/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DRESOURCES_DIR=&quot;/home/jared/Physzy/resources&quot;"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/home/jared/Physzy/src"/>
+					<Add directory="/home/jared/Physzy/externals"/>
+					<Add directory="/home/jared/Physzy/externals/glm"/>
+					<Add directory="/home/jared/Physzy/src/examples"/>
+					<Add directory="/home/jared/Physzy/src/examples/fluid1"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/opt/clang-dev/install/lib/clang/8.0.1/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/examples/fluid1/Makefile&quot;  VERBOSE=1 fluid1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/examples/fluid1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/examples/fluid1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/examples/fluid1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fluid1/fast">
+				<Option output="/home/jared/Physzy/cmake-build-debug/bin/fluid1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jared/Physzy/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-DRESOURCES_DIR=&quot;/home/jared/Physzy/resources&quot;"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/home/jared/Physzy/src"/>
+					<Add directory="/home/jared/Physzy/externals"/>
+					<Add directory="/home/jared/Physzy/externals/glm"/>
+					<Add directory="/home/jared/Physzy/src/examples"/>
+					<Add directory="/home/jared/Physzy/src/examples/fluid1"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/x86_64-linux-gnu/c++/7.5.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../include/c++/7.5.0/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/opt/clang-dev/install/lib/clang/8.0.1/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/examples/fluid1/Makefile&quot;  VERBOSE=1 fluid1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/examples/fluid1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/examples/fluid1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jared/Physzy/cmake-build-debug/src/examples/fluid1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jared/Physzy/src/engine/math/foo.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/home/jared/Physzy/src/examples/fluid1/main.cpp">
+			<Option target="fluid1"/>
+		</Unit>
+		<Unit filename="/home/jared/Physzy/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jared/Physzy/../../../usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/jared/Physzy/src/engine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\engine\"/>
+		</Unit>
+		<Unit filename="/home/jared/Physzy/src/examples/fluid1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\examples\fluid1\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

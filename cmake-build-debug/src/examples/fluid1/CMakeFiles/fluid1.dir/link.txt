@@ -1,0 +1,1 @@
+/opt/clang-dev/install/bin/clang++  -g   CMakeFiles/fluid1.dir/main.cpp.o  -o ../../../bin/fluid1 -lpthread ../../../lib/libengine.a -lstdc++fs /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so /usr/lib/x86_64-linux-gnu/libGLEW.so -lSDL2 -lpthread 
