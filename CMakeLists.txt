@@ -60,7 +60,20 @@ include_directories("externals/glm/")
 include_directories(src/examples)
 
 add_subdirectory(src/engine)
-add_subdirectory(src/examples/fluid1)
+
+#### add execuable from examples/
+
+set(auto_analisis_dir ${CMAKE_CURRENT_SOURCE_DIR}/src/examples/)
+execute_process(
+        COMMAND ls ${auto_analisis_dir}
+        OUTPUT_VARIABLE dirs)
+message("find files : \n${dirs}")
+string(REPLACE "\n" ";" RPLACE_LIST ${dirs})
+
+foreach (f ${RPLACE_LIST})
+    message("add :${f}")
+    add_subdirectory(${auto_analisis_dir}${f})
+endforeach (f ${RPLACE_LIST})
 
 #file(GLOB_RECURSE srcs src/*.cpp src/*.h)
 #add_executable(tinyrender ${srcs})

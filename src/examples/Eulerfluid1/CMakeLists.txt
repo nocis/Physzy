@@ -1,5 +1,7 @@
 # Target name
-set(target fluid1)
+
+STRING( REGEX REPLACE ".*/(.*)" "\\1" CURRENT_FOLDER ${CMAKE_CURRENT_SOURCE_DIR} )
+set(target CURRENT_FOLDER)
 
 # Includes
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
