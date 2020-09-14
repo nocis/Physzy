@@ -6,11 +6,13 @@
 #ifndef PHYSZY_USEFULMACRO_H
 #define PHYSZY_USEFULMACRO_H
 
+#include <assert.h>
+
 // Assert macros.
-#ifdef _DEBUG
-#define MY_ASSERT(expression) assert(expression)
-#else
+#ifdef NDEBUG
 #define MY_ASSERT(expression)
+#else
+#define MY_ASSERT(expression) assert(expression)
 #endif
 #define SAFE_DELETE(x) \
     { \
@@ -52,5 +54,6 @@
 #ifndef M_1_PI
 #define M_1_PI                      0.31830988618379067154
 #endif
+
 
 #endif //PHYSZY_USEFULMACRO_H
