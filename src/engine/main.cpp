@@ -14,8 +14,8 @@ using namespace PHYSZY;
 
 int main(int argc, char** argv)
 {
-    PhysicsAnimation* game = PhysicsAnimation::getInstance();
-    FluidEngine* fluidEngine = FluidEngine::create(game);
+    PhysicsAnimation* ani = PhysicsAnimation::getInstance();
+    FluidEngine* fluidEngine = FluidEngine::create(ani);
     MY_ASSERT(fluidEngine);
     int result = fluidEngine->enterMessagePump();
     delete fluidEngine;

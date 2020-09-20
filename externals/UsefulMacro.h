@@ -8,6 +8,55 @@
 
 #include <assert.h>
 
+
+/*
+template <typename T>
+class is_pointer_type
+{
+    typedef struct { char array[1]; } yes;
+    typedef struct { char array[2]; } no;
+
+    template <typename C> static yes test_g(decltype(&C::get));
+    template <typename C> static no  test_g(...);
+
+    template <typename C> static yes test_e(typename C::element_type*);
+    template <typename C> static no  test_e(...);
+
+    enum {
+        has_get          = sizeof(test_g<T>(0)) == sizeof(yes),
+        has_element_type = sizeof(test_e<T>(0)) == sizeof(yes)
+    };
+
+    template <typename Q, bool OK = false>
+    struct get { struct type {}; };
+
+    template <typename Q>
+    struct get<Q, true>
+    {
+        typedef decltype(((Q*)nullptr)->get()) type;
+    };
+
+    template <typename Q, bool OK = false>
+    struct ptr { struct type {}; };
+
+    template <typename Q>
+    struct ptr<Q, true>
+    {
+        typedef typename Q::element_type* type;
+    };
+
+public:
+    enum {
+        types_ok = std::is_same<
+                typename get<T, has_get>::type,
+                typename ptr<T, has_element_type>::type
+        >::value,
+        value    = std::is_convertible<T, void*>::value || types_ok
+    };
+};
+*/
+
+
 // Assert macros.
 #ifdef NDEBUG
 #define MY_ASSERT(expression)
@@ -16,8 +65,6 @@
 #endif
 #define SAFE_DELETE(x) \
     { \
-        delete x; \
-        x = NULL; \
     }
 
 // Array deletion macro

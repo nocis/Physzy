@@ -5,6 +5,7 @@
 #ifndef PHYSZY_PHYSICSANIMATION_H
 #define PHYSZY_PHYSICSANIMATION_H
 
+
 #include "engine/Core/Animation.h"
 #include "PhysicsController.h"
 
@@ -20,6 +21,7 @@ namespace PHYSZY
         static PhysicsAnimation* getInstance();
         static double getGameTime();
         bool startup();
+        void setSolver( SolverPtr&& pSolver);
 
         int run();
         void pause();

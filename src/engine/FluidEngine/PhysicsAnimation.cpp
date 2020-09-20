@@ -246,6 +246,13 @@ namespace PHYSZY
         }
     }
 
+    void PhysicsAnimation::setSolver( SolverPtr&& pSolver )
+    {
+        // 1: sph1.cpp--sphsolver3ptr
+        // 2: shared_from_this--solverptr
+        _physicsController->setSolver(pSolver);
+        // 3: controller--_solver
+    }
 
 
     /*void PhysicsAnimation::runSolver()

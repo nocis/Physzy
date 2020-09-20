@@ -5,12 +5,23 @@
 #ifndef PHYSZY_PHYSICSCONTROLLER_H
 #define PHYSZY_PHYSICSCONTROLLER_H
 
+#include "Physics/Solver/Solver.h"
+
+#include "UsefulMacro.h"
 namespace PHYSZY
 {
     class PhysicsController
     {
     public:
-        void update(float elapsedTime);
+        PhysicsController();
+        ~PhysicsController();
+        void update(double elapsedTime);
+
+        void setSolver(SolverPtr& pSolver);
+
+    private:
+        SolverPtr _solver;
+
     };
 }
 
