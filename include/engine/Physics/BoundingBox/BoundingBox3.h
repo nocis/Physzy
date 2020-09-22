@@ -1,4 +1,4 @@
-//
+//Physics
 // Created by jared on 9/19/20.
 //
 
@@ -8,7 +8,7 @@
 
 
 #include "Physics/BoundingBox/BoundingBox.h"
-#include "Physics/Vector/Vector3.h"
+#include "MathUtil/Vector/Vector3.h"
 
 namespace PHYSZY
 {
@@ -18,7 +18,35 @@ namespace PHYSZY
     public:
         BoundingBox(){}
         BoundingBox( Vector3<T>&& point1, Vector3<T>&& point2){}
+        BoundingBox( const Vector3<T>& point1, const Vector3<T>& point2){}
 
+        //constexpr can be passed as s rvalue
+        void Expand(T&& delta)
+        {
+            // named lvalue using const T&
+            _lowerCorner -= delta;
+            _upperCorner += delta;
+        }
+
+
+        T GetWidth() const
+        {
+            return _upperCorner._x - _lowerCorner._x;
+        }
+
+        T GetHeight() const
+        {
+            return _upperCorner._y - _lowerCorner._y;
+        }
+
+        Vector3<T> MidPoint() const
+        {
+            return (_upperCorner + _lowerCorner) / static_cast<T>(2);
+        }
+
+
+        Vector3<T> _lowerCorner;
+        Vector3<T> _upperCorner;
     };
 
     template <typename T>

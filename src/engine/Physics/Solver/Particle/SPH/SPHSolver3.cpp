@@ -42,7 +42,7 @@ namespace PHYSZY
 
     SPHSolver3Ptr SPHSolver3::Builder::BuildMakeShared() const
     {
-        return std::shared_ptr<SPHSolver3>(
+        return SPHSolver3Ptr(
                 new SPHSolver3(_targetDensity, _targetSpacing, _relativeKernelRadius),
                 [](SPHSolver3* obj) { delete obj; }
         );

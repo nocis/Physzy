@@ -21,6 +21,9 @@ namespace PHYSZY
         static PhysicsAnimation* getInstance();
         static double getGameTime();
         bool startup();
+
+        // pass smart pointer to rvalue reference could be used for
+        // upcast from shared_ptr<derived class> to shared_ptr<base class>!!!!!!!!
         void setSolver( SolverPtr&& pSolver);
 
         int run();

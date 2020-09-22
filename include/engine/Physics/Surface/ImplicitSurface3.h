@@ -8,8 +8,12 @@
 #include "Physics/Surface/Surface3.h"
 namespace PHYSZY
 {
-    class ImplicitSurface3 : public Surface3{
-
+    class ImplicitSurface3 : public Surface3
+    {
+    public:
+        //default
+        ImplicitSurface3(const Transform3& transform = Transform3(),
+                         bool isNormalFlipped = false);
     };
 
     using ImplicitSurface3Ptr = std::shared_ptr<ImplicitSurface3>;

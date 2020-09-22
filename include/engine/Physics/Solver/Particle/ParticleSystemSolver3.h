@@ -15,19 +15,20 @@ namespace PHYSZY
     public:
         // derive from builderbase
         class Builder;
+        // need to return a temporary object, so no reference
+        static Builder GetBuilder();
 
         ParticleSystemSolver3();
         ParticleSystemSolver3(double radius, double mass);
         virtual ~ParticleSystemSolver3();
         void OnAdvanceTimeStep( double timeIntervalInSeconds ) override;
-        void setEmitter( Emitter *pEmitter );
-        void setCollider( Collider *pCollider );
+        void setEmitter( EmitterPtr&& pEmitter );
+        void setCollider( ColliderPtr&& pCollider );
 
-
-        static Builder GetBuilder();
+        virtual void test(){std::cout<<"ParticleSystemSolver3"<<std::endl;}
     private:
-        Emitter* _emitter;
-        Collider* _collider;
+        EmitterPtr _emitter;
+        ColliderPtr _collider;
     };
 
     using ParticleSystemSolver3Ptr = std::shared_ptr<ParticleSystemSolver3>;

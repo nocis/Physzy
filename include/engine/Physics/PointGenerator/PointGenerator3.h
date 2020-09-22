@@ -6,7 +6,7 @@
 #define PHYSZY_POINTGENERATOR3_H
 
 #include <memory>
-#include "Physics/Array/Array1.h"
+#include "MathUtil/Array/Array1.h"
 #include "Physics/BoundingBox/BoundingBox3.h"
 
 #include <functional>

@@ -16,8 +16,7 @@ namespace PHYSZY
     {
     public:
         class Builder;
-
-
+        static Builder GetBuilder();
 
         VolumeParticleEmitter3(
                 const ImplicitSurface3Ptr& implicitSurface,
@@ -29,25 +28,63 @@ namespace PHYSZY
                 double jitter = 0.0, bool isOneShot = true,
                 bool allowOverlapping = false, uint32_t seed = 0);
 
+        virtual void test(){std::cout<<"VolumeParticleEmitter3"<<std::endl;}
+
     private:
-        std::mt19937 m_rng;
+        std::mt19937 _rng;
 
-        ImplicitSurface3Ptr m_implicitSurface;
-        BoundingBox3D m_maxRegion;
-        double m_spacing;
-        Vector3D m_initialVel;
-        Vector3D m_linearVel;
-        Vector3D m_angularVel;
-        PointGenerator3Ptr m_pointsGen;
+        ImplicitSurface3Ptr _implicitSurface;
+        BoundingBox3D _maxRegion;
+        double _spacing;
+        Vector3D _initialVel;
+        Vector3D _linearVel;
+        Vector3D _angularVel;
+        PointGenerator3Ptr _pointsGen;
 
-        size_t m_maxNumberOfParticles = std::numeric_limits<size_t>::max();
-        size_t m_numberOfEmittedParticles = 0;
+        size_t _maxNumberOfParticles = std::numeric_limits<size_t>::max();
+        size_t _numberOfEmittedParticles = 0;
 
-        double m_jitter = 0.0;
-        bool m_isOneShot = true;
-        bool m_allowOverlapping = false;
+        double _jitter = 0.0;
+        bool _isOneShot = true;
+        bool _allowOverlapping = false;
 
     };
+
+    using VolumeParticleEmitter3Ptr = std::shared_ptr<VolumeParticleEmitter3>;
+
+    class VolumeParticleEmitter3::Builder final
+    {
+    public:
+        Builder& WithImplicitSurface(const ImplicitSurface3Ptr& implicitSurface);
+        //Builder& WithSurface(const Surface3Ptr& surface);
+        Builder& WithMaxRegion(const BoundingBox3D& maxRegion);
+        Builder& WithSpacing(double spacing);
+        //Builder& WithInitialVelocity(const Vector3D& initialVel);
+        //Builder& WithLinearVelocity(const Vector3D& linearVel);
+        //Builder& WithAngularVelocity(const Vector3D& angularVel);
+        //Builder& WithMaxNumberOfParticles(size_t maxNumberOfParticles);
+        //Builder& WithJitter(double jitter);
+        Builder& WithIsOneShot(bool isOneShot);
+        //Builder& WithAllowOverlapping(bool allowOverlapping);
+        Builder& WithRandomSeed(uint32_t seed);
+        VolumeParticleEmitter3 Build() const;
+        VolumeParticleEmitter3Ptr BuildMakeShared() const;
+
+    private:
+        ImplicitSurface3Ptr _implicitSurface;
+        bool _isBoundSet = false;
+        BoundingBox3D _maxRegion;
+        double _spacing = 0.1;
+        Vector3D _initialVel;
+        Vector3D _linearVel;
+        Vector3D _angularVel;
+        size_t _maxNumberOfParticles = std::numeric_limits<size_t>::max();
+        double _jitter = 0.0;
+        bool _isOneShot = true;
+        bool _allowOverlapping = false;
+        uint32_t _seed = 0;
+    };
+
 }
 
 

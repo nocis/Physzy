@@ -3,8 +3,12 @@
 //
 
 #include "engine/Physics/Emitter/Emitter.h"
-namespace PHYSZY {
+namespace PHYSZY
+{
 
 
+    Emitter::Emitter()
+    {
 
+    }
 }

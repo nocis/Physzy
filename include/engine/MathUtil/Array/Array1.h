@@ -5,7 +5,7 @@
 #ifndef PHYSZY_ARRAY1_H
 #define PHYSZY_ARRAY1_H
 
-#include "Physics/Array/Array.h"
+#include "Array.h"
 //#include <Core/Array/ArrayAccessor1.hpp>
 
 #include <vector>

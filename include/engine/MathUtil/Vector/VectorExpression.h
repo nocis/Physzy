@@ -5,6 +5,8 @@
 #ifndef PHYSZY_VECTOREXPRESSION_H
 #define PHYSZY_VECTOREXPRESSION_H
 
+#include "stddef.h"
+
 namespace PHYSZY
 {
     template <typename T, typename E>

@@ -5,7 +5,7 @@
 #ifndef PHYSZY_VECTOR_H
 #define PHYSZY_VECTOR_H
 
-#include "Physics/Vector/VectorExpression.h"
+#include "VectorExpression.h"
 
 namespace PHYSZY
 {

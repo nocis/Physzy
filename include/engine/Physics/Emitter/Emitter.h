@@ -5,11 +5,20 @@
 #ifndef PHYSZY_EMITTER_H
 #define PHYSZY_EMITTER_H
 
-namespace PHYSZY {
+#include <memory>
+#include <iostream>
+namespace PHYSZY
+{
 
-    class Emitter {
+    class Emitter
+    {
+    public:
+        Emitter();
+
+        virtual void test(){std::cout<<"Emitter"<<std::endl;}
 
     };
 
+    using EmitterPtr = std::shared_ptr<Emitter>;
 }
 #endif //PHYSZY_EMITTER_H

@@ -34,14 +34,14 @@ namespace PHYSZY
     }
 
 
-    void ParticleSystemSolver3::setEmitter(Emitter *pEmitter)
+    void ParticleSystemSolver3::setEmitter(EmitterPtr&& pEmitter)
     {
         MY_ASSERT(pEmitter);
         SAFE_DELETE( _emitter );
         _emitter = pEmitter;
     }
 
-    void ParticleSystemSolver3::setCollider(Collider *pCollider)
+    void ParticleSystemSolver3::setCollider(ColliderPtr&& pCollider)
     {
         MY_ASSERT(pCollider);
         SAFE_DELETE( _collider );
@@ -66,7 +66,7 @@ namespace PHYSZY
 
     ParticleSystemSolver3Ptr ParticleSystemSolver3::Builder::BuildMakeShared() const
     {
-        return std::shared_ptr<ParticleSystemSolver3>(
+        return ParticleSystemSolver3Ptr(
                 new ParticleSystemSolver3(_radius, _mass),
                 [](ParticleSystemSolver3* obj) { delete obj; });
     }

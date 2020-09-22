@@ -6,14 +6,24 @@
 #include <engine/FluidEngine/FluidEngine.h>
 #include <engine/FluidEngine/PhysicsAnimation.h>
 #include <engine/FluidEngine/PhysicsController.h>
-#include <engine/Physics/Array/Array.h>
-#include <engine/Physics/Array/Array1.h>
+#include <engine/MathUtil/Array/Array.h>
+#include <engine/MathUtil/Array/Array1.h>
+#include <engine/MathUtil/Transform/Transform3.h>
+#include <engine/MathUtil/Vector/Vector.h>
+#include <engine/MathUtil/Vector/Vector3-Impl.h>
+#include <engine/MathUtil/Vector/Vector3.h>
+#include <engine/MathUtil/Vector/VectorExpression.h>
 #include <engine/Physics/BoundingBox/BoundingBox.h>
 #include <engine/Physics/BoundingBox/BoundingBox3.h>
 #include <engine/Physics/Collider/Collider.h>
+#include <engine/Physics/Collider/Collider3.h>
+#include <engine/Physics/Collider/RigidBodyCollider3.h>
 #include <engine/Physics/Emitter/Emitter.h>
 #include <engine/Physics/Emitter/ParticleEmitter3.h>
 #include <engine/Physics/Emitter/VolumeParticleEmitter3.h>
+#include <engine/Physics/Geometry/Box3.h>
+#include <engine/Physics/Geometry/Plane3.h>
+#include <engine/Physics/Geometry/Sphere3.h>
 #include <engine/Physics/Particle/ParticleSystemData3.h>
 #include <engine/Physics/PointGenerator/PointGenerator3.h>
 #include <engine/Physics/Solver/Grid/GridFluidSolver3.h>
@@ -21,8 +31,6 @@
 #include <engine/Physics/Solver/Particle/SPH/SPHSolver3.h>
 #include <engine/Physics/Solver/Solver.h>
 #include <engine/Physics/Surface/ImplicitSurface3.h>
+#include <engine/Physics/Surface/ImplicitSurfaceSet3.h>
 #include <engine/Physics/Surface/Surface3.h>
-#include <engine/Physics/Vector/Vector.h>
-#include <engine/Physics/Vector/Vector3.h>
-#include <engine/Physics/Vector/VectorExpression.h>
 #endif  // INCLUDE_PHYSZYENGINE_H_

@@ -6,4 +6,9 @@
 namespace PHYSZY
 {
 
+    Surface3::Surface3(const Transform3 &transform, bool isNormalFlipped)
+            : _transform(transform), _isNormalFlipped(isNormalFlipped)
+    {
+
+    }
 }
